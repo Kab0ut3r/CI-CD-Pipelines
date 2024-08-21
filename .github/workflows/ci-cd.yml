@@ -19,6 +19,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        cache: maven
 
     - name: Build with Maven
       run: mvn -B compile --file pom.xml
@@ -36,6 +37,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        cache: maven
 
     - name: Test with Maven
       run: mvn test
@@ -53,6 +55,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        cache: maven
 
     - name: Package with Maven
       run: mvn -B package --file pom.xml
