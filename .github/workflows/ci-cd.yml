@@ -40,7 +40,7 @@ jobs:
         cache: maven
 
     - name: Test with Maven
-      run: mvn test
+      run: mvn test --file pom.xml
 
   package:
     runs-on: ubuntu-latest
